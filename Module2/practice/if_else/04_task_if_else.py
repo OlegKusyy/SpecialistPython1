@@ -5,3 +5,12 @@
 # Для всех остальных случаев не выводить ничего.
 
 # TODO: your code here
+
+digit = int(input("Введите целое число : "))
+
+if digit % 5 == 0 and digit % 3 == 0:
+    print("Foobar")
+elif digit % 3 == 0:
+    print("Foo")
+else:
+    print("Bar")
