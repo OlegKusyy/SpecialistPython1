@@ -3,3 +3,9 @@
 # то программа запрашивает ввод снова.
 
 # TODO: your code here
+number = 0
+stop = 0
+
+while stop != "хватит":
+    stop = input("Введите слово хватит для останова цикла : ")
+    number += 1
