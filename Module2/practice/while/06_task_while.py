@@ -17,3 +17,31 @@
 # 284 220
 
 # TODO: your code here
+
+N = 10000
+number1 = 1
+opti_factor = 2
+
+while number1 <= N:
+    divider_number1 = 1
+    sum_divider_number1 = 0
+    while divider_number1 * opti_factor <= number1:
+        if number1 % divider_number1 == 0:
+            sum_divider_number1 += divider_number1
+        divider_number1 += 1
+    # if sum_divider_number1 == 1:
+    #     print("Простое число -", number1)
+    # print(number1, "Сумма делителей", sum_divider_number1)
+    if 1 < sum_divider_number1 <= N:
+        # print(number1, "Сумма делителей", sum_divider_number1)
+        number2 = sum_divider_number1
+        divider_number2 = 1
+        sum_divider_number2 = 0
+        while divider_number2 * opti_factor <= number2:
+            if number2 % divider_number2 == 0:
+                sum_divider_number2 += divider_number2
+            divider_number2 += 1
+        # print(number2, sum_divider_number2)
+        if number1 == sum_divider_number2 and number1 != number2:
+            print("Дружественные числа -", number1, number2)
+    number1 += 1
